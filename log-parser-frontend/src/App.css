@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  /* Set your desired background color */
+}
+
+.page-container {
+  text-align: center;
+  margin-top: 50px;
+  /* Set the desired top margin */
+}
+
+.upload-box {
+  border: 1px solid #ddd;
+  /* Set the desired border color */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  /* Set your desired button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:disabled {
+  background-color: #95a5a6;
+  /* Set your desired disabled button color */
+  cursor: not-allowed;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  /* Set your desired loader color */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-box {
+  border: 2px solid #c0392b;
+  /* Set your desired error box border color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 300px;
+  /* Set the desired width */
+  text-align: center;
+}
+
+.error-message {
+  color: #c0392b;
+  /* Set your desired error message color */
+}
